@@ -25,6 +25,9 @@ public class Start {
 		 }else{
 		 System.out.println(wordList.get(rotationPoint)+" at "+rotationPoint+" is the rotation point");
 		 }
+		 //Linked List
+		 boolean hasCycle = manAtWork.contains_cycle();
+		 System.out.println("Contais loop "+hasCycle);
 	}
 
 }
