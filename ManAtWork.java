@@ -44,7 +44,8 @@ public class ManAtWork {
 			if(p1==p2){
 				return true;
 			}
-			if(p1.next != null && p2.next!=null && p2.next.next!=null){
+			//p1 would never be null, p2 would encounter null before p1
+			if(p2.next!=null && p2.next.next!=null){
 			p1 = p1.next;
 			p2 = p2.next.next;
 			}else{
