@@ -1,6 +1,7 @@
 package com.all.interview;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 
 public class ManAtWork {
 
@@ -52,6 +53,23 @@ public class ManAtWork {
 			}
 		}
 		return false;
+	}
+	
+	public String didItReturn(ArrayList<String> droneIds) {
+		// TODO Auto-generated method stub
+		HashSet<String> lostDroneSet = new HashSet<String>();
+		for(String droneId : droneIds){
+			//When an element is inserted into a set succesfully it returns true, else a false if the element is already present
+			if(lostDroneSet.add(droneId)){
+				
+			}else{
+			//When insertion fails, that means the item is already present, now remove it from the Set
+				lostDroneSet.remove(droneId);
+			}
+		}
+		
+		//The left over string is the lost drone, this also returns if there are multiple lost drones
+		return lostDroneSet.toString();
 	}
 
 }

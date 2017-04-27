@@ -28,6 +28,26 @@ public class Start {
 		 //Linked List
 		 boolean hasCycle = manAtWork.contains_cycle();
 		 System.out.println("Contais loop "+hasCycle);
+		 
+		//Drone return code
+		 ArrayList<String> droneIds = new ArrayList<String>();
+		 droneIds.add("12344");
+		 droneIds.add("12344");
+		 droneIds.add("12362");
+		 droneIds.add("12363");
+		 droneIds.add("12348");
+		 droneIds.add("12348");
+		 droneIds.add("12350");
+		 droneIds.add("12350");
+		 droneIds.add("12351");
+		 droneIds.add("12351");
+		 droneIds.add("12352");
+		 droneIds.add("12352");
+		 droneIds.add("12359");
+		 droneIds.add("12362");
+		 droneIds.add("12363");
+		 String amazonStolenDrone = manAtWork.didItReturn(droneIds);
+		 System.out.println(amazonStolenDrone + "is the stolen drone");
 	}
 
 }
